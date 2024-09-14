@@ -12,15 +12,15 @@ export function PortfolioPage() {
       <main className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <h2 className="text-3xl mb-4">Hello it's Me</h2>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">John Doe</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Anjali Raj</h1>
           <h3 className="text-2xl md:text-3xl mb-6">
             And I'm an{" "}
-            <span className="text-cyan-400">Architect / ui-ux designer</span>
+            <span className="text-cyan-400">Architect / UI-UX designer</span>
           </h3>
           <p className="mb-8 max-w-lg">
-            Welcome to my website! I'm John Doe, an architect and UI/UX designer
-            with a passion for blending functionality and aesthetics. With a
-            background in architecture and a keen eye for design, I merge
+            Welcome to my website! I'm Anjali Raj, an architect and UI/UX
+            designer with a passion for blending functionality and aesthetics.
+            With a background in architecture and a keen eye for design, I merge
             architectural principles with modern design techniques to deliver
             exceptional results.
           </p>
