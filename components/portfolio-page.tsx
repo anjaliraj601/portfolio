@@ -1,12 +1,30 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Mail, Menu } from "lucide-react";
+import { downloadFileByURL } from "@/lib/downloadPDF";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export function PortfolioPage() {
+  const [loading, setLoading] = useState(false);
+  async function downloadFile() {
+    setLoading(true);
+    const { success } = await downloadFileByURL(
+      "https://utfs.io/f/ANXNxDLF9i8sjnF5wqDKOUZxq2tDm0fyJPczbpCXWlE8da5G",
+      "Anjali_Raj",
+      "pdf"
+    );
+    if (success) {
+      toast.success("File downloaded successfully!");
+    } else {
+      toast.error("Failed to download file!");
+    }
+
+    setLoading(false);
+  }
   return (
     <div className="min-h-screen bg-[#1E1B2E] text-white md:px-20">
       <main className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between">
@@ -25,21 +43,34 @@ export function PortfolioPage() {
             exceptional results.
           </p>
           <div className="flex space-x-4 mb-8">
-            <Link href="#" className="text-cyan-400 hover:text-cyan-300">
-              <Instagram size={24} />
-            </Link>
-            <Link href="#" className="text-cyan-400 hover:text-cyan-300">
+            <Link
+              href="https://www.linkedin.com/in/anjaliraj09"
+              target="_blank"
+              className="text-cyan-400 hover:text-cyan-300"
+            >
               <Linkedin size={24} />
             </Link>
-            <Link href="#" className="text-cyan-400 hover:text-cyan-300">
+            <Link
+              href="https://www.instagram.com/anjali__raj09?utm_source=qr&igsh=dm9teXY1NXlzMjk4"
+              target="_blank"
+              className="text-cyan-400 hover:text-cyan-300"
+            >
+              <Instagram size={24} />
+            </Link>
+            <Link
+              href="mailto:anjaliraj0922@gmail.com"
+              target="_blank"
+              className="text-cyan-400 hover:text-cyan-300"
+            >
               <Mail size={24} />
             </Link>
-            <Link href="#" className="text-cyan-400 hover:text-cyan-300">
-              <Facebook size={24} />
-            </Link>
           </div>
-          <Button className="bg-cyan-400 hover:bg-cyan-500 text-black">
-            Download Resume
+          <Button
+            className="bg-cyan-400 hover:bg-cyan-500 text-black"
+            onClick={downloadFile}
+            disabled={loading}
+          >
+            {loading ? "Downloading..." : "Download Resume"}
           </Button>
         </div>
         <div className="lg:w-1/2 relative mt-12 lg:mt-0">

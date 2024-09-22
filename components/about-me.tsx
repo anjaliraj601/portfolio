@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export function AboutMe() {
   return (
     <div className="min-h-screen bg-[#2A2550] text-white p-8">
@@ -13,7 +14,7 @@ export function AboutMe() {
               alt="Profile picture"
               width={300}
               height={300}
-              className="rounded-full border-8 border-[#45CFDD]"
+              className="rounded-full border-8 border-[#45CFDD] w-[300px] h-[300px] object-cover"
             />
           </div>
           <div className="md:w-2/3 md:pl-12">
@@ -32,9 +33,12 @@ export function AboutMe() {
               as I embark on this exciting journey to shape the future of our
               built environment.
             </p>
-            <Button className="bg-[#45CFDD] text-[#2A2550] hover:bg-[#3BBECF] font-semibold px-6 py-2 rounded-md">
+            <Link
+              href={"/projects"}
+              className="bg-[#45CFDD] text-[#2A2550] hover:bg-[#3BBECF] font-semibold px-6 py-2 rounded-md"
+            >
               See more
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
