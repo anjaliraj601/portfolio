@@ -5,45 +5,46 @@ import Image from "next/image";
 export function ProjectsShowcase() {
   const projects = [
     {
-      src: "https://utfs.io/f/ANXNxDLF9i8sL5U1WXuwSnzXJmH6oLdutDq2Bbs7I1fN0ajY",
+      src: "https://utfs.io/f/ANXNxDLF9i8sLfjnSvuwSnzXJmH6oLdutDq2Bbs7I1fN0ajY",
       alt: "Sports stadium project",
       title: "Sports Complex",
-      description: "A modern stadium with multi-purpose facilities",
+      description: "Ripples Effect : Sports complex inspired by ganga",
     },
     {
       src: "https://utfs.io/f/ANXNxDLF9i8se7lXSsw7CwzF5S3g49mq1UD2eZtLPOjrxIva",
       alt: "SPORTS HOSTEL",
       title: "SPORTS HOSTEL",
-      description: "Sustainable urban living spaces",
+      description: "Hostel For Sports Person",
     },
     {
-      src: "/placeholder.svg?height=250&width=400",
-      alt: "Urban planning project",
-      title: "Urban Planning",
-      description: "Innovative city layout and green spaces",
+      src: "https://utfs.io/f/ANXNxDLF9i8s4ceBgLKRw0CVi8aF9Nh7fmTlBKngAGkHYjqD",
+      alt: "Girls Hostel",
+      title: "Girls Hostel",
+      description: "Girls Hostel Design ",
     },
     {
-      src: "/placeholder.svg?height=250&width=400",
-      alt: "Modern house project",
-      title: "Modern House",
-      description: "Contemporary design with eco-friendly features",
+      src: "https://utfs.io/f/ANXNxDLF9i8sLtXShybuwSnzXJmH6oLdutDq2Bbs7I1fN0aj",
+      alt: "Architect Residence ",
+      title: "Architect Residence",
+      description: "Residence & office design for Architects ",
     },
     {
-      src: "/placeholder.svg?height=250&width=400",
-      alt: "Apartment complex project",
-      title: "Apartment Complex",
-      description: "High-rise living with panoramic views",
+      src: "https://utfs.io/f/ANXNxDLF9i8svujl8BArBqmjUEWRpaP35xfClkdbe6o7MV9g",
+      alt: "Housing Complex",
+      title: "Housing Complex",
+      description: "Housing Complex for HIG , MIG , LIG & EWS",
     },
     {
-      src: "/placeholder.svg?height=250&width=400",
-      alt: "Conceptual building design",
-      title: "Conceptual Design",
-      description: "Futuristic architecture pushing boundaries",
+      src: "https://utfs.io/f/ANXNxDLF9i8stPcc3WgRj13a2vHXpwUSldWPQuqkc5yreomF",
+      alt: "Interior Design",
+      title: "Interior Design",
+      description:
+        "Interior Design :add elements that will calm your space and soothe your smile",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-[#2D2B4A] p-8">
+    <div className="min-h-screen bg-[#2D2B4A] p-8 h-3">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
         Our <span className="text-[#5FD5E0]">Projects</span>
       </h1>
