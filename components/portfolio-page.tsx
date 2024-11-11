@@ -78,11 +78,11 @@ export function PortfolioPage() {
           <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-sky-300 absolute bottom-0 right-20 -z-10"></div>
           <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden bg-sky-300">
             <Image
-              src="https://utfs.io/f/1UHzy064GsUIvIeeYLJ7fCHp8XU9goKY02Tn3hb5sc6N1qJZ"
+              src="https://utfs.io/f/ANXNxDLF9i8sLNespNuwSnzXJmH6oLdutDq2Bbs7I1fN0ajY"
               alt="Anjali Raj"
               layout="fill"
               objectFit="cover"
-              className="rounded-full z-10"
+              className="rounded-full border-8 border-[#45CFDD] w-[300px] h-[300px] object-cover"
             />
           </div>
         </div>

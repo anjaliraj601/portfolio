@@ -10,7 +10,7 @@ export function AboutMe() {
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <Image
-              src="https://utfs.io/f/1UHzy064GsUIER03imHIzyrKu7i34qodwmeMaTjkxh8YJg1L"
+              src="https://utfs.io/f/ANXNxDLF9i8sVQPcgtsRodCphqlrnt6wYHL1Ba5PMEUbWJI0"
               alt="Profile picture"
               width={300}
               height={300}
